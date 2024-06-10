@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/soundcloud', async (req, res) => {
   try {
     const search = req.query.search;
-    const axiosResponse = await axios.get(`https://jonellccapisprojectv2-a62001f39859.herokuapp.com/api/sc?query=${search}`);
+    const axiosResponse = await axios.get(`https://cprojectapisjonellv2.adaptable.app/api/sc?query=${search}`);
     const firstUrl = axiosResponse.data[0].url;
 
     const permalink = firstUrl;
